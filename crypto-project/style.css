@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --primary: #16D5FF;
+    --secondary: #999999;
+    --light: #F2F8FE;
+    --dark: #111111;
+}
+*{
+    font-family: Poppins;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero-header .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--secondary);
+}
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+#header {
+    width: 48vw;
+    height: 50px;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 16px;
+    align-items: center;
+}
+
+#logo_container {
+    display: flex;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+}
+#brand_name{
+    color: #16D5FF ;
+    font-size: calc(1.325rem + .9vw);
+}
+nav{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ul li a span{
+    color: #16D5FF;
+}
+#color{
+    color: black;
+}
+.fa {  
+    padding: 10px;  
+  text-align: center;  
+    margin: 5px 2px;  
+    font-size: 30px;  
+    width: 40px;  
+    height: 40px;
+  }  
+  .fa-facebook {  
+    background: rgb(252, 241, 241);  
+    color: #16D5FF;
+    border-radius: 50%; 
+    font-weight: bold; 
+  }  
+  .fa-twitter {  
+    background: rgb(252, 241, 241);  
+    color: #16D5FF;
+    border-radius: 50%;  
+  }  
+  .fa-linkedin {  
+    background: rgb(252, 241, 241);  
+    color: #16D5FF;
+    border-radius: 50%; 
+   
+  }  
+  .navbar.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.navbar .navbar-brand {
+    height: 75px;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-weight: 500;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+.navbar .btn:hover {
+    color: #FFFFFF !important;
+    background: var(--primary) !important;
+}
+
+
+  /* homepge */
+  section{
+    display: flex;
+    /* background-color:  #e3f2fd; */
+   margin-bottom: 200px;
+
+  }
+  .container1{
+    margin-left: 30px;
+    width: 50%;
+    margin: auto 50px;
+    /* padding: auto; */
+    /* text-align: center; */
+  }
+  .container1  p{
+    color: gray;
+  }
+  #heading{
+    /* font-size: calc(1.475rem + 2.7vw); */
+    font-weight: 800;
+    line-height: 1.2;
+    /* text-align: center; */
+   
+  }
+  .container2 img{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+  }
+.container1 button{
+    background-color: #16D5FF;
+    border: none;
+    width: 140px;
+    height: 50px;
+    color: white;
+  }
+  /* survice page */
+  .service-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: -80px;
+    right: -80px;
+    border: 80px solid;
+    transform: rotate(45deg);
+    opacity: 1;
+    transition: .5s;
+}
+
+.service-item.bg-white::after {
+    border-color: transparent transparent var(--light) transparent;
+}
+
+.service-item.bg-light::after {
+    border-color: transparent transparent #FFFFFF transparent;
+}
+
+.service-item:hover::after {
+    opacity: 0;
+}
+a{
+    color: C;
+}
+.service-item a{
+    color: #16D5FF;
+}
+
+/*** About ***/
+.button a{
+   background-color: #16D5FF; 
+   border: none;
+   color: #FFFFFF;
+}
+.container .text-primary {
+    color: #16D5FF;
+}
+.h-100 i{
+    color: #16D5FF;
+}
